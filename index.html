@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Đến với Huế</title>
+</head>
+
+<body onload="Ready(),myFunction(),celender ()">
+    <div class="">
+        <div class="header">
+            <div class="navbar">
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="">...</a></li>
+                </ul>
+            </div>
+            <div class="toolsearch">
+                <input type="text" id="search" placeholder="Search">
+                <img src="img/icons8-search.svg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h2> ĐẾN VỚI HUẾ</h2>
+            <p class="name"> Bạn muốn làm gì</p>
+            <div class="banner" id="banner">
+                <i class="arrow left" id="l" onclick="changeArrow('l')"></i>
+                <div class="content">
+                    <h4 id='title'>Du Lịch</h4>
+                    <div id="more">|Read more...|</div>
+                    <div class="btn">
+                        <button onclick="changeImageAndContent('btn1')"></button>
+                        <button onclick="changeImageAndContent('btn2')"></button>
+                        <button onclick="changeImageAndContent('btn3')"></button>
+                        <button onclick="changeImageAndContent('btn4')"></button>
+                    </div>
+                </div>
+                <i class="arrow right" id="r" onclick="changeArrow('r')"></i>
+            </div>
+            <div class="container">
+                <div class="container_primary">
+                    <div class="introduce">
+                        <h1> Giới thiệu chung về Huế – Thành phố Festival du lịch </h1>
+                        <h5> Ngày đăng tải 02-06-2020, bởi Tờ Lờ Vờ Đờ</h5>
+                        <div class="img"><img src="img/introduce.jpg" alt=""></div>
+                        <p>Từng là Kinh đô của triều đại nhà Nguyễn, vì thế mà Huế được xem là một trong những thành phố
+                            có bề dày lịch sử, văn hóa lâu đời nhất ở nước ta...</p>
+                        <Button>| Đọc thêm...|</Button>
+                        <hr>
+                    </div>
+                    <div class="galley">
+                        <h1> Những bức hình đẹp về Huế </h1>
+                        <h5> Ngày đăng tải 02-06-2020, bởi Tờ Lờ Vờ Đờ</h5>
+                        <div class="img"><img src="img/Gallery.webp" alt=""></div>
+                        <p>Bên cạnh nét đẹp tráng lệ của cố đô xưa, cuộc sống thường nhật gắn liền sông nước của người
+                            dân Thừa Thiên Huế được khắc họa sống động qua smartphone cao cấp của Huawei...</p>
+                        <Button>| Đọc thêm...|</Button>
+                        <hr>
+                    </div>
+                    <div class="someActive">
+                        <div class="active_left">
+                            <div class="active">
+                                <h1>Du lịch</h1>
+                                <h3>Những địa điểm du lịch nổi tiếng ở Huế</h3>
+                                <p> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <img src="img/baner1.jpg" alt="">
+                                <p>17 địa điểm du lịch đẹp có thể bạn chưa biết ở Huế...</p>
+                            </div>
+                            <div class="active">
+                                <h1>Ẩm thực</h1>
+                                <h3>15 món ăn nhất định phải thử khi đến Huế</h3>
+                                <p> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <img src="img/baner2.jpg" alt="">
+                                <p>Nếu bạn đến Huế, ngoài thăm thú những cung điện cổ kính, uy nghi và tận hưởng không
+                                    khí mát lành ở những bãi biển đẹp, bạn cũng cần dành thời gian thưởng thức các món
+                                    ngon đặc sản của mảnh đất cố đô này!...</p>
+                            </div>
+                        </div>
+                        <div class="active_right">
+                            <div class="active">
+                                <h1>Mua sắm</h1>
+                                <h3> Những địa điểm mua sắm ở Huế không thể bỏ qua khi tới đây</h3>
+                                <p> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <img src="img/baner3.jpg" alt="">
+                                <p>Mùa du lịch đã đến, Huế là một nơi có nhiều địa điểm du lịch vì nơi đây là Cố đô của
+                                    Việt Nam ta với những khu đền đài, lăng tẩm cổ kính đầy trang nghiêm. Huế là nơi tụ
+                                    họp nhiều món ăn đơn giản mà đậm đà vị quê hương như là bún bò huế, bánh lọc, bánh
+                                    bèo,… </p>
+                            </div>
+                            <div class="active">
+                                <h1>Vui chơi</h1>
+                                <h3>Địa điểm vui chơi ở Huế nhất định phải đến </h3>
+                                <p> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <img src="img/baner4.jpg" alt="">
+                                <p>Nhắc đến Thành phố Huế là nhắc đến trung tâm của văn hóa, ẩm thực, du lịch, khảo cổ …
+                                    Đến với Huế có rất nhiều địa điểm đẹp mang tính biểu tượng của cố đô như: Sông
+                                    Hương, núi Ngự Bình, lăng di tích Huế, chùa Thiên Mụ, cầu Tràng Tiền, Phu Văn Lâu.
+                                    Tuy nhiên không thể không nhắc đến các địa điểm vui chơi thú vị khác khi đến Huế:
+                                    Phố đi bộ, bảo tàng, công viên, các quán cafe đẹp...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_right">
+                    <div class="aboutMe">
+                        <h2>ABOUT ME</h2>
+                        <img src="img/avatar.jpg" alt="">
+                        <p>My name is Dat and I am an awesome WordPress blog theme for photography, food, travel and
+                            other blogs. I was created by colorlib.</p>
+                        <h4>FOLLOW ME</h4>
+                        <DIV class="icon">
+                            <i class="fa fa-facebook-official"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-youtube-play"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-github"></i>
+                        </DIV>
+                    </div>
+                    <div class="recent">
+                        <ul>
+                            <h4>Recent Post</h4>
+                            <li>
+                                <img src="img/baner1.jpg" alt="">
+                                <p>Ngày đăng tải</p>
+                            </li>
+                            <li>
+                                <img src="img/baner2.jpg" alt="">
+                                <p>Ngày đăng tải</p>
+                            </li>
+                            <li>
+                                <img src="img/baner3.jpg" alt="">
+                                <p>Ngày đăng tải</p>
+                            </li>
+                            <li>
+                                <img src="img/baner4.jpg" alt="">
+                                <p>Ngày đăng tải</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="search" class="search" placeholder="Search">
+                        <button> SEARCH</button>
+                    </div>
+                    <div id="celender">
+                        12312312312
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <DIV class="icon">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube-play"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-github"></i>
+            </DIV>
+            <p>Activello. Theme by Colorlib Powered by WordPress</p>
+        </div>
+    </div>
+    <script>
+        function changeImageAndContent(btn) {
+            let changeImg = document.getElementById("banner");
+            if (btn === "btn1") {
+                changeImg.style.backgroundImage = "url('../img/baner1.jpg')";
+                document.getElementById('title').innerHTML = "Du Lịch";
+            }
+            if (btn === "btn2") {
+                changeImg.style.backgroundImage = "url('../img/baner2.jpg')";
+                document.getElementById('title').innerHTML = "Ẩm thực";
+            }
+            if (btn === "btn3") {
+                changeImg.style.backgroundImage = "url('../img/baner3.jpg')";
+                document.getElementById('title').innerHTML = "Mua sắm";
+            }
+            if (btn === "btn4") {
+                changeImg.style.backgroundImage = "url('../img/baner4.jpg')";
+                document.getElementById('title').innerHTML = "Vui Chơi";
+            }
+        }
+        let arrow = ["btn1", "btn2", "btn3", "btn4"];
+        let indexs = 0;
+        function changeArrow(element) {
+            if (element === "l") {
+                if (indexs < 1) {
+                    indexs = 3;
+                    changeImageAndContent(arrow[indexs]);
+                }
+                else {
+                    indexs -= 1;
+                    changeImageAndContent(arrow[indexs]);
+                }
+
+            }
+            if (element === "r") {
+                if (indexs > 2) {
+                    indexs = 0;
+                    changeImageAndContent(arrow[indexs]);
+                }
+                else {
+                    indexs += 1;
+                    changeImageAndContent(arrow[indexs]);
+                }
+            }
+        }
+        function move(e) {
+            console.log(e);
+            switch (e.key) {
+                case "ArrowLeft": changeArrow('l'); break;
+                case "ArrowRight": changeArrow('r'); break;
+            }
+        }
+        function Ready() {
+            window.addEventListener('keydown', move);
+        }
+        function myFunction() {
+            setInterval(function () { changeArrow("r"); }, 3000);
+        }
+        function celender() {
+            text = '<table><caption>Tháng 6</caption><tr><th>C.Nhật</th><th>T.Hai</th><Th>T.Ba</Th><TH>T.Tư</TH><th>T.Năm</th><th>T.Sáu</th><th>T.Bảy</th></tr>';
+            text += "<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            celenderDay = [];
+            let checkday = new Date();
+            today = checkday.getDate();
+            let day = 1;
+            for (let i = 0; i < 5; i++) {
+                celenderDay[i] = []
+                for (let j = 0; j < 7; j++) {
+                    celenderDay[i].push(day);
+                    day++;
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                text += "<tr>";
+                for (let j = 0; j < 7; j++) {
+                    if (celenderDay[i][j] < 31) {
+                        if (celenderDay[i][j] === today) {
+                            text += "<td>" + celenderDay[i][j] + "<span>Today</span>" + "</td>";
+                        }else{
+                            text += "<td>" + celenderDay[i][j] + "</td>";
+                        }
+                       
+                    } else {
+                        text += " ";
+                    }
+
+                }
+                text += "</tr>";
+            }
+            text += "</table>";
+            document.getElementById('celender').innerHTML = text;
+        }
+
+    </script>
+</body>
+
+</html>

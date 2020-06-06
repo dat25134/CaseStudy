@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    border-bottom: rgb(185, 180, 180) solid 2px;
+}
+.navbar {
+    flex: 70%;
+}
+.menu {
+    display: flex;
+    padding: 20px 50px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.toolsearch{
+    flex: 30%;
+    padding: 20px 0px;
+}
+.menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.menu li a{
+    text-decoration:none;
+}
+.menu li a:visited{
+    color: black;
+}
+.toolsearch input{
+    border: none;
+    font-size: 150%;
+    width: 150px;
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 20px ;
+    padding: 5px;
+}
+.toolsearch input::placeholder{
+    padding-left: 20px;
+}
+.toolsearch img{
+width: 30px;
+height: 30px;
+}
+.content{
+    text-align: center;
+}
+.content h2,p{
+    font-family: "Sofia" , sans-serif;
+    
+}
+.content h2 {
+    color: rgb(177, 20, 177);
+    margin-top: 5%;
+    font-size: 200%;
+}
+.content .name{
+    color: rgb(108, 208, 226);
+}
+.content .banner {
+
+    width: 100%;
+    height: 200px;
+    border: none;
+    background-image: url("../img/baner1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 50px;
+    color: white;
+    padding-top: 120px;
+    display: flex;
+}
+.banner .content{
+    flex: 80%;
+}
+.content .banner h4{
+    border-bottom: solid white 2px;
+    display: inline;
+    padding-bottom: 5px;
+    font-size: 150%;
+}
+
+.content .banner div {
+    margin-top: 10px;
+    font-size: 150%;
+}
+.btn button{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+/* CSS Arrow */
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+  }
+  .arrow:hover{
+    border: solid rgb(177, 20, 177);
+    border-width: 0 3px 3px 0;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 20px;
+  } 
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: 20px;
+  }
+  .container {
+      display: flex;
+  }
+  .container_primary{
+      flex: 70%;
+  }
+  .container_right {
+      flex: 30%;
+  }
+img{
+      width: 70%;
+      height: auto;
+  }
+  .galley img{
+    width: 90%;
+  }
+  .active_left{
+      display: flex;
+      padding: 50px 10px;
+  }
+  .active_right{
+    display: flex;
+    padding: 50px 10px;
+}
+.active {
+    flex: 50%;
+    padding: 0px 40px
+}
+  .someActive img{
+    width: 70%;
+    height: auto;
+  }
+  .container_right img{
+    width: 60%;
+    height: 100px;
+  }
+  .aboutMe img{
+      width: 60%;
+      height: auto;
+  }
+  .container_right h4 {
+      margin-top: 50px;
+      text-align: left;
+      border-bottom: solid rgb(160, 157, 157) 2px;
+  }
+  .icon{
+      font-size: 200%;
+      margin-top: 100px;
+      opacity: 0.6;
+  }
+  .icon i{
+      margin-right: 25px;
+  }
+  .recent ul li{
+      list-style: none;
+      margin-top: 50px;
+      display: flex;
+  }
+  .recent ul li img {
+      flex: 40%;
+  }
+  .recent ul li p {
+      flex: 60%;
+  }
+  .recent ul {
+      padding: 20px;
+  }
+
+  .container_primary {
+      padding: 50px 80px;
+  }
+  .container_primary h1 {
+      margin: 20px 0px;
+      color: rgb(61, 48, 48);
+  }
+  .container_primary h5{
+    margin: 20px 0px;
+    color: rgb(99, 74, 74);
+  }
+  .container_primary p{
+    margin: 20px 0px;
+    color: rgb(165, 163, 163);
+  }
+  .container_primary button{
+    margin: 20px 0px;  
+    text-transform: uppercase;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    color: grey;
+  } 
+#more:hover {
+    color: indigo;
+}
+  .footer{
+      text-align: center;
+      background-color: rgb(226, 225, 225);
+      padding: 60px 0px;
+  }
+  .footer .icon{
+      margin-bottom: 50px;
+  }
+  .footer p {
+      color: grey;
+  }
+  .icon i:hover{
+      color: indigo;
+      cursor: pointer;
+  }
+  h1:hover,h2:hover,h3:hover,h4:hover,h5:hover{
+    color: indigo;
+    cursor: pointer;
+  }
+  h3{
+      font-size: 80%;
+  }
+  button:hover{
+    color: indigo;
+    cursor: pointer;
+  }
+  img:hover {
+      box-shadow: 5px 5px 5px gray;
+  }
+  hr{
+    box-shadow: 0px 1px 1px gray; 
+  }
+  .search {
+      display: flex;
+    width: 200px;
+    padding-top: 100px;
+    }
+    .search input{
+        border: gray solid 2px;
+        border-bottom: none;
+        padding: 5px;
+    }
+  .search button{
+      background-color: gray;
+      border: gray solid 1px;
+      padding: 5px;
+  }
+  #celender {
+      width: 100%;
+
+  }
+  table,th,td,tr{
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+td{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+span{
+    font-size: 30%;
+    margin-left: -8px;
+    font-weight: normal;           
+}
+  tr:nth-child(1){
+    background-color: orange;
+    color: white;
+}
+tr:nth-child(2){
+    background-color: white;
+}
+td:nth-child(1){
+    color: red;
+}
+td:nth-child(7){
+    color: blue;
+}
+th:nth-child(7){
+    color: blue;
+}
+th:nth-child(1){
+    color: red;
+}
+caption{
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+#celender span{
+    margin-left: 0.5px;
+    color: red;
+}
+th,td {
+    padding: 2px;
+}
+.active{
+    height: 400px;
+    overflow: hidden;
+}
+@media screen and (max-width:768px){
+    .navbar{
+        color: rgb(160, 157, 157);
+        font-size: 80%;
+    }
+    .active_left{
+        padding: 0;
+    }
+    .active_right{
+        padding: 0;
+    }
+    .active{
+        padding:0 ;
+    }
+    .aboutMe img{
+        width: 100px;
+        height: auto;
+        margin: 10px;
+    }
+    .recent ul li img{
+        width: 100px;
+        height: auto;
+    }
+}
+@media screen and (max-width:414px){
+.navbar .menu{
+    display: block;
+}
+.navbar{
+    flex: 50%;
+}
+.toolsearch {
+    flex: 50%;
+}
+#search::placeholder{
+    font-size: 50%;
+}
+.content .banner {
+
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-image: url("../img/baner1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 50px;
+    color: white;
+    padding-top: 10px;
+    display: flex;
+}
+.banner .content{
+    flex: 80%;
+}
+.content .banner h4{
+    border-bottom: solid white 2px;
+    display: inline;
+    padding-bottom: 5px;
+    font-size: 80%;
+}
+
+.content .banner #more {
+    margin-top: 10px;
+    font-size: 80%;
+}
+.content .banner .btn{
+    margin-top: -15px;
+}
+.btn button{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+/* CSS Arrow */
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+  }
+  .arrow:hover{
+    border: solid rgb(177, 20, 177);
+    border-width: 0 3px 3px 0;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 20px;
+    margin-top: 30px;
+  } 
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .container {
+      display: block;
+
+  }
+  .container_primary{
+      padding: 50px 50px;
+  }
+  h1{
+      font-size: 120%;
+  }
+  h5{
+      font-size: 70%;
+  }
+  #search{
+      margin-left: 20px;
+      width: 50%;
+  }
+  #celender{
+      padding-left: 20px;
+      margin-bottom: 10px;
+  }
+  @media screen and (max-width:320px){
+    td{
+        width: 20px;
+        height: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    table{
+        font-size: 80%;
+    }
+    #celender {
+        width: 90%;
+    }
+    @media screen and (max-width:320px){
+    td{
+        width: 20px;
+        height: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    table{
+        font-size: 80%;
+    }
+    #celender {
+        width: 90%;
+    }
+    @media screen and (max-width:320px){
+        #celender {
+            width: 90%;
+        }
+    }   
+  }
+}
+}
