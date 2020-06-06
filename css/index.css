@@ -433,6 +433,9 @@ th,td {
   h5{
       font-size: 70%;
   }
+  .p{
+      font-size: 50%;
+  }
   #search{
       margin-left: 20px;
       width: 50%;
