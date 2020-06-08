@@ -457,11 +457,12 @@ th,td {
     #celender {
         width: 90%;
     }
-    .recent img{
-        height: 50px;
-    }
+    
     @media screen and (max-width:320px){
-    td{
+        .recent img{
+            height: 50px;
+        }
+        td{
         width: 20px;
         height: 10px;
         text-align: center;

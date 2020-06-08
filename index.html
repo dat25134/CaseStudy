@@ -227,26 +227,26 @@
             celenderDay = [];
             let checkday = new Date();
             today = checkday.getDate();
-            let day = 1;
+            let day = 0;
             for (let i = 0; i < 5; i++) {
                 celenderDay[i] = []
                 for (let j = 0; j < 7; j++) {
-                    celenderDay[i].push(day);
-                    day++;
+                        celenderDay[i].push(day);
+                        day++;
                 }
             }
             for (let i = 0; i < 5; i++) {
                 text += "<tr>";
                 for (let j = 0; j < 7; j++) {
-                    if (celenderDay[i][j] < 31) {
+                    if ((celenderDay[i][j] < 31)&&(celenderDay[i][j]>0)) {
                         if (celenderDay[i][j] === today) {
                             text += "<td>" + celenderDay[i][j] + "<span>Today</span>" + "</td>";
-                        }else{
+                        } else {
                             text += "<td>" + celenderDay[i][j] + "</td>";
                         }
-                       
+
                     } else {
-                        text += " ";
+                        text += "<td></td> ";
                     }
 
                 }
