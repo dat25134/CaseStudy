@@ -5,11 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-image: url("../img/bg-body.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-}
+
 .header {
     display: flex;
     border-bottom: rgb(185, 180, 180) solid 2px;
