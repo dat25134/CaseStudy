@@ -46,7 +46,7 @@
                 <div class="container_primary">
                     <div class="introduce">
                         <h1> Giới thiệu chung về Huế – Thành phố Festival du lịch </h1>
-                        <h5> Ngày đăng tải 02-06-2020, bởi Tờ Lờ Vờ Đờ</h5>
+                        <h5 class="by"> Ngày đăng tải 02-06-2020, bởi Tờ Lờ Vờ Đờ</h5>
                         <div class="img"><img src="img/introduce.jpg" alt=""></div>
                         <p>Từng là Kinh đô của triều đại nhà Nguyễn, vì thế mà Huế được xem là một trong những thành phố
                             có bề dày lịch sử, văn hóa lâu đời nhất ở nước ta...</p>
@@ -54,9 +54,9 @@
                         <hr>
                     </div>
                     <div class="galley">
-                        <h1> Những bức hình đẹp về Huế </h1>
-                        <h5> Ngày đăng tải 02-06-2020, bởi Tờ Lờ Vờ Đờ</h5>
-                        <div class="img"><img src="img/Gallery.webp" alt=""></div>
+                        <h1 > Những bức hình đẹp về Huế </h1>
+                        <h5 class="by"> Ngày đăng tải 02-06-2020, bởi Tờ Lờ Vờ Đờ</h5>
+                        <div class="img"><img src="img/galley.jpg" alt=""></div>
                         <p>Bên cạnh nét đẹp tráng lệ của cố đô xưa, cuộc sống thường nhật gắn liền sông nước của người
                             dân Thừa Thiên Huế được khắc họa sống động qua smartphone cao cấp của Huawei...</p>
                         <Button>| Đọc thêm...|</Button>
@@ -67,14 +67,14 @@
                             <div class="active">
                                 <h1>Du lịch</h1>
                                 <h3>Những địa điểm du lịch nổi tiếng ở Huế</h3>
-                                <p class="p"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <p class="p by"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
                                 <img src="img/baner1.jpg" alt="">
                                 <p>17 địa điểm du lịch đẹp có thể bạn chưa biết ở Huế...</p>
                             </div>
                             <div class="active">
                                 <h1>Ẩm thực</h1>
                                 <h3>15 món ăn nhất định phải thử khi đến Huế</h3>
-                                <p class="p"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <p class="p by"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
                                 <img src="img/baner2.jpg" alt="">
                                 <p>Nếu bạn đến Huế, ngoài thăm thú những cung điện cổ kính, uy nghi và tận hưởng không
                                     khí mát lành ở những bãi biển đẹp, bạn cũng cần dành thời gian thưởng thức các món
@@ -85,7 +85,7 @@
                             <div class="active">
                                 <h1>Mua sắm</h1>
                                 <h3> Những địa điểm mua sắm ở Huế không thể bỏ qua khi tới đây</h3>
-                                <p class="p"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <p class="p by"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
                                 <img src="img/baner3.jpg" alt="">
                                 <p>Mùa du lịch đã đến, Huế là một nơi có nhiều địa điểm du lịch vì nơi đây là Cố đô của
                                     Việt Nam ta với những khu đền đài, lăng tẩm cổ kính đầy trang nghiêm. Huế là nơi tụ
@@ -95,7 +95,7 @@
                             <div class="active">
                                 <h1>Vui chơi</h1>
                                 <h3>Địa điểm vui chơi ở Huế nhất định phải đến </h3>
-                                <p class="p"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
+                                <p class="p by"> Ngày đăng tải 02-06-2020, Bởi Tờ Lờ Vờ Đờ</p>
                                 <img src="img/baner4.jpg" alt="">
                                 <p>Nhắc đến Thành phố Huế là nhắc đến trung tâm của văn hóa, ẩm thực, du lịch, khảo cổ …
                                     Đến với Huế có rất nhiều địa điểm đẹp mang tính biểu tượng của cố đô như: Sông
@@ -159,10 +159,11 @@
                 <i class="fa fa-instagram"></i>
                 <i class="fa fa-github"></i>
             </DIV>
-            <p>Activello. Theme by Colorlib Powered by WordPress</p>
+            <p>Email: tlvdat.bkdn@gmail.com Phone: 0976513859</p>
         </div>
     </div>
     <script>
+
         function changeImageAndContent(btn) {
             let changeImg = document.getElementById("banner");
             if (btn === "btn1") {
@@ -254,7 +255,10 @@
             text += "</table>";
             document.getElementById('celender').innerHTML = text;
         }
-
+        let update = document.getElementsByClassName('by');
+        for (let i = 0;i<update.length;i++){
+            update[i].innerHTML = "Ngày đăng tải 08-06-2020, bởi TranLeVietDat";
+        }
     </script>
 </body>
 

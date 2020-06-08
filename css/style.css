@@ -71,17 +71,18 @@ height: 30px;
     border: none;
     background-image: url("../img/baner1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     margin-top: 50px;
-    color: white;
+    color: rgb(255, 51, 0);
     padding-top: 120px;
     display: flex;
+    background-position-y: -250px;
 }
 .banner .content{
     flex: 80%;
 }
 .content .banner h4{
-    border-bottom: solid white 2px;
+    border-bottom: solid orange 2px;
     display: inline;
     padding-bottom: 5px;
     font-size: 150%;
@@ -132,6 +133,9 @@ height: 30px;
   .container_right {
       flex: 30%;
   }
+.by {
+    font-size:75%;
+}
 img{
       width: 70%;
       height: auto;
@@ -317,7 +321,7 @@ th,td {
     padding: 2px;
 }
 .active{
-    height: 400px;
+    height: auto;
     overflow: hidden;
 }
 @media screen and (max-width:768px){
